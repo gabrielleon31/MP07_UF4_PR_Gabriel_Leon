@@ -1,0 +1,49 @@
+/node_modules
+/public/build
+/public/hot
+/storage/*.key
+/vendor
+.env
+.env.backup
+.env.production
+
+# Laravel
+/vendor
+/node_modules
+/public/hot
+/storage/*.key
+
+# DotEnv
+.env
+
+# Laravel IDE Helper Files
+_ide_helper_php
+_ide_helper.php
+.phpstorm.meta.php
+
+# Composer
+/vendor/
+
+# npm
+/node_modules/
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log
+
+# Vite
+/public/build/
+
+# Homestead
+Homestead.json
+Homestead.yaml
+aliases
+
+# Dbeaver
+.dbeaver-data-sources.json
+.dbeaver/.localdblist.json
+
+# Docker
+/.docker/build/
+
+# Local Storage
+/.vscode/vscode-userdata

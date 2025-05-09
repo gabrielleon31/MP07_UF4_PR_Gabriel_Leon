@@ -1,0 +1,45 @@
+Probar Login (Petición para obtener token Admin)
+POST : http://localhost:8000/api/login
+{
+    "email": "admin@email.com",
+    "password": "admin123"
+}
+-----------
+Probar Login (Petición para obtener token Usuario)
+POST : http://localhost:8000/api/login
+{
+    "email": "usuari@email.com",
+    "password": "usuari123"
+}
+-----------
+Probar Listado de Productos
+GET : http://localhost:8000/api/products
+-----------
+Probar Creación de Producto (Petición como Admin)
+POST : http://localhost:8000/api/products
+{
+    "name": "Smartphone X",
+    "price": 799.99,
+    "description": "El último modelo de smartphone",
+    "stock": 50
+}
+-----------
+Probar Edición de Producto (Petición como Admin)
+PUT : http://localhost:8000/api/products/ID_DEL_PRODUCTO
+{
+    "name": "Smartphone X - Mejorado",
+    "price": 750.00, 
+    "stock": 45
+}
+-----------
+Probar Eliminación de Producto (Petición como Admin)
+DELETE : http://localhost:8000/api/products/ID_DEL_PRODUCTO
+-----------
+Cómo Probar Validación (Datos incompletos o erróneos) Admin
+POST : http://localhost:8000/api/products
+{
+    "name": "",
+    "price": -799.99,
+    "description": "",
+    "stock": -50
+}

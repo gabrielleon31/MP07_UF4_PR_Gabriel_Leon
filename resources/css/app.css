@@ -1,0 +1,24 @@
+/* resources/css/app.css */
+
+/* Importación de Tailwind CSS */
+@import 'tailwindcss';
+
+/* === Añadir esta línea para importar la fuente de iconos MDI === */
+/* Asegúrate de que @mdi/font está instalado (npm install @mdi/font) */
+@import '~@mdi/font/css/materialdesignicons.css';
+/* ============================================================ */
+
+
+/* Directivas @source para Laravel Vite Plugin */
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+/* Configuración de theme (probablemente de Tailwind) */
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Puedes añadir otros estilos generales aquí */
